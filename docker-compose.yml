@@ -1,0 +1,12 @@
+services:
+  raw-edit-server:
+    build: .
+    container_name: raw-edit-server
+    restart: always
+    ports:
+      - "7860:7860"
+    mem_limit: 6g
+    cpus: 3.0
+    environment:
+      - PORT=7860
+      - NODE_ENV=production

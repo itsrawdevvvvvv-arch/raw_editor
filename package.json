@@ -1,0 +1,16 @@
+{
+  "name": "raw_edit_server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Free render server for raw_edit: HTML + voiceover in, 1080p MP4 out",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/smoke.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "playwright": "1.49.1"
+  }
+}
